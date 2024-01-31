@@ -182,6 +182,9 @@ namespace Sample
          */
         public static int TriangleKind(double a, double b, double c)
         {   
+            if (a >= b + c || b >= a + c || c >= a + b) {
+                return -1;
+            }
             double maxNum = 0;
             double sumNum = 0;
             if (a > b && a > c) {
