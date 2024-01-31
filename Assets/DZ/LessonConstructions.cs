@@ -201,10 +201,8 @@ namespace Sample
                 return 0;
             } else if (maxNum == sumNum) {
                 return 1;
-            } else if (maxNum > sumNum) {
-                return 2;
             } else {
-                return -1;
+                return 2;
             }
             // throw new NotImplementedException();
         }
